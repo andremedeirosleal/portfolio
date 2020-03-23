@@ -125,9 +125,11 @@ a,div,span{
 }  
 #module-about a.collapsed::after {
     content: '+ Ler mais';
+    color:blue;
 }  
 #module-about a:not(.collapsed)::after {
     content: '- Ler menos';
+    color:red;
 }
 #module-about a{
     width:100%;
@@ -151,9 +153,11 @@ a,div,span{
  }  
  #module-experience a.collapsed::after {
      content: '+ Ler mais';
+     color:blue;
  }  
  #module-experience a:not(.collapsed)::after {
      content: '- Ler menos';
+     color:red;
  }
  #module-experience a{
      width:100%;
