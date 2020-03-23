@@ -109,18 +109,18 @@ a,div,span{
     background-color: #404040;
 }
 
-
+/* COLLAPSE ABOUT */
 #module-about {
    text-align: left;
    font-size: 1rem;
    line-height: 1.5;
 }   
-#module-about #collapseExample.collapse:not(.show) {
+#module-about #txt-about-body.collapse:not(.show) {
     display: block;
     height: 3rem;
     overflow: hidden;
 }  
-#module-about #collapseExample.collapsing {
+#module-about #txt-about-body.collapsing {
     height: 3rem;
 }  
 #module-about a.collapsed::after {
@@ -133,7 +133,32 @@ a,div,span{
     width:100%;
     text-align: right;
 }
+/* ----------------- */
 
+/* COLLAPSE EXPERIENCE */
+#module-experience {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+ }   
+ #module-experience #txt-experience-body.collapse:not(.show) {
+     display: block;
+     height: 3rem;
+     overflow: hidden;
+ }  
+ #module-experience #txt-experience-body.collapsing {
+     height: 3rem;
+ }  
+ #module-experience a.collapsed::after {
+     content: '+ Ler mais';
+ }  
+ #module-experience a:not(.collapsed)::after {
+     content: '- Ler menos';
+ }
+ #module-experience a{
+     width:100%;
+     text-align: right;
+ }
 
 @media (max-width: 800px) {
     .card-default{
