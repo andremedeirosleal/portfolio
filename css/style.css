@@ -117,11 +117,11 @@ a,div,span{
 }   
 #module-about #txt-about-body.collapse:not(.show) {
     display: block;
-    height: 3rem;
+    height: 50px;
     overflow: hidden;
 }  
 #module-about #txt-about-body.collapsing {
-    height: 3rem;
+    height: 50px;
 }  
 #module-about a.collapsed::after {
     content: '+ Ler mais';
@@ -143,11 +143,11 @@ a,div,span{
  }   
  #module-experience #txt-experience-body.collapse:not(.show) {
      display: block;
-     height: 3rem;
+     height: 50px;
      overflow: hidden;
  }  
  #module-experience #txt-experience-body.collapsing {
-     height: 3rem;
+     height: 50px;
  }  
  #module-experience a.collapsed::after {
      content: '+ Ler mais';
