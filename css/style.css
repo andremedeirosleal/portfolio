@@ -48,7 +48,7 @@ a,div,span{
 }
 
 .card-default{    
-    box-shadow: -4px 4px 8px black;
+    box-shadow: -4px 4px 8px black;    
     margin:2px;   
     text-align: center;  
     border-radius:10px; 
@@ -57,6 +57,7 @@ a,div,span{
     color:#4d4d4d;
     margin:2px;
     margin-top:10px;
+    width:100%;
 }
 
 .card-main{
@@ -64,8 +65,10 @@ a,div,span{
     max-width:25%
 }
 
-
-.card-body{
+.outside-card{
+    width:100%;
+}
+.card-body-default{
     padding-top:10px;
     padding-bottom: 15px;
 }
@@ -86,27 +89,51 @@ a,div,span{
     text-align: left;
 }
 
-#myBtn {
-    display: none;
+#bt-up {  
     position: fixed;
-    bottom: 60px;
-    right: 30px;
+    display: none;
+    bottom: 40px;
+    right: 10px;
     z-index: 99;
-    font-size: 14px;
-    border: none;
+    font-size: 12px;    
     outline: none;
-    background-color: #2f2f2f;
+    background-color: rgba(47, 47, 47, 0.7);
     color: white;
     border: 1px solid white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 10px;
-    transition: opacity 0.3;   
+    border-radius: 10px;       
 }
 
-myBtn:hover {
-    opacity:0.9;
+#bt-up:hover {
+    background-color: #404040;
 }
+
+
+#module-about {
+   text-align: left;
+   font-size: 1rem;
+   line-height: 1.5;
+}   
+#module-about #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}  
+#module-about #collapseExample.collapsing {
+    height: 3rem;
+}  
+#module-about a.collapsed::after {
+    content: '+ Ler mais';
+}  
+#module-about a:not(.collapsed)::after {
+    content: '- Ler menos';
+}
+#module-about a{
+    width:100%;
+    text-align: right;
+}
+
 
 @media (max-width: 800px) {
     .card-default{
