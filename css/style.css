@@ -58,6 +58,7 @@ a,div,span{
     margin:2px;
     margin-top:10px;
     width:100%;
+    padding: 3px;
 }
 
 .card-main{
@@ -124,11 +125,11 @@ a,div,span{
     height: 50px;
 }  
 #module-about a.collapsed::after {
-    content: '+ Ler mais';
+    content: '+ More';
     color:blue;
 }  
 #module-about a:not(.collapsed)::after {
-    content: '- Ler menos';
+    content: '- Less';
     color:red;
 }
 #module-about a{
@@ -145,18 +146,18 @@ a,div,span{
  }   
  #module-experience #txt-experience-body.collapse:not(.show) {
      display: block;
-     height: 50px;
+     height: 80px;
      overflow: hidden;
  }  
  #module-experience #txt-experience-body.collapsing {
      height: 50px;
  }  
  #module-experience a.collapsed::after {
-     content: '+ Ler mais';
+     content: '+ More';
      color:blue;
  }  
  #module-experience a:not(.collapsed)::after {
-     content: '- Ler menos';
+     content: '- Less';
      color:red;
  }
  #module-experience a{
@@ -170,6 +171,7 @@ a,div,span{
         margin:0px;
         margin-top:10px;
         min-width: 100%;
+        
     }
 
     .row{
