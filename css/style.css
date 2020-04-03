@@ -1,13 +1,20 @@
 body{
     background-image: url("/portfolio/lib/images/bg/carbon-fibre.png");
-    background-color: #2F2F2F;    
-    margin: 0%;
-    padding: 0%;
-    width: 100vw;      
-    max-width: 100vw;
+    background-color: #2F2F2F;      
     overflow-x: hidden;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.container-fluid{
+    padding-left: 30px !important;
+    padding-right:30px !important;
+}
+
+#card-0{
+    margin-top:50px;
 }
 
 i{
@@ -31,20 +38,11 @@ a,div,span{
     color:#4d4d4d;  
 }
 
-.presentation-hole{
-    background-image: url("/portfolio/lib/images/bg/bright-squares.png");
-    background-color: #2F2F2F;
-    height: 12px;
-    width: 50px;
-    margin-bottom: 20px;   
-    border-radius:5px;
-    border-right:3px solid #2f2f2f;
-    border-bottom:1px solid #2f2f2f;
-}
-
 .row{
     text-align: center;
     width:100%;
+    margin-left:0px;
+    margin-right:0px;
 }
 
 .card-default{    
@@ -56,19 +54,17 @@ a,div,span{
     border-radius: 5px;          
     color:#4d4d4d;
     margin:2px;
-    margin-top:10px;
+    margin-top:30px;
     width:100%;
     padding: 3px;
+    max-width: 1000px;
 }
 
-.card-main{
-    min-width: 350px;
-    max-width:25%
-}
 
 .outside-card{
     width:100%;
 }
+
 .card-body-default{
     padding-top:10px;
     padding-bottom: 15px;
@@ -81,13 +77,14 @@ a,div,span{
 }
 
 .txt-title{
-    font-size: 18px;
+    font-size: 2.75 rem;    
     font-weight: bold;
+    margin-top:15px;
     margin-bottom:15px;
 }
 
 .txt-body{
-    text-align: left;
+    text-align: center;
 }
 
 #bt-up {  
@@ -111,67 +108,92 @@ a,div,span{
 }
 
 /* COLLAPSE ABOUT */
-#module-about {
-   text-align: left;
-   font-size: 1rem;
+#module-experience {
+   text-align: center;
+   font-size: 1.25rem;
+   font-weight: 300;
    line-height: 1.5;
 }   
-#module-about #txt-about-body.collapse:not(.show) {
+#module-experience #txt-experience-body.collapse:not(.show) {
     display: block;
-    height: 50px;
+    height: 200px;
     overflow: hidden;
 }  
-#module-about #txt-about-body.collapsing {
-    height: 50px;
+#module-experience #txt-experience-body.collapsing {
+    height: 200px;
 }  
-#module-about a.collapsed::after {
+#module-experience a.collapsed::after {
     content: '+ More';
     color:blue;
 }  
-#module-about a:not(.collapsed)::after {
+#module-experience a:not(.collapsed)::after {
     content: '- Less';
     color:red;
 }
-#module-about a{
+#module-experience a{
     width:100%;
     text-align: right;
 }
 /* ----------------- */
 
 /* COLLAPSE EXPERIENCE */
-#module-experience {
-    text-align: left;
-    font-size: 1rem;
+#module-skills {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
     line-height: 1.5;
- }   
- #module-experience #txt-experience-body.collapse:not(.show) {
+}   
+#module-skills #txt-skills-body.collapse:not(.show) {
      display: block;
-     height: 80px;
+     height: 170px;
      overflow: hidden;
- }  
- #module-experience #txt-experience-body.collapsing {
-     height: 50px;
- }  
- #module-experience a.collapsed::after {
+}  
+
+#module-skills #txt-skills-body.collapsing {
+     height: 170px;
+}  
+
+#module-skills a.collapsed::after {
      content: '+ More';
      color:blue;
- }  
- #module-experience a:not(.collapsed)::after {
+}  
+
+#module-skills a:not(.collapsed)::after {
      content: '- Less';
      color:red;
- }
- #module-experience a{
+}
+
+#module-skills a{
      width:100%;
      text-align: right;
- }
+}
 
 @media (max-width: 800px) {
+    .container-fluid{
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+        font-size: 1.0rem !important;
+        font-weight: 200 !important;
+    }
+
+    #module-experience, #module-skills, #module-about{
+        font-size: 1.0rem !important;
+        font-weight: 200 !important;
+    }
+
+    #module-experience #txt-experience-body.collapse:not(.show) {
+        height: 170px;
+    }  
+
+    #module-skills #txt-skills-body.collapse:not(.show) {
+        height: 170px;
+    }  
+
     .card-default{
         border-radius:4px;
         margin:0px;
         margin-top:10px;
-        min-width: 100%;
-        
+        min-width: 100%;        
     }
 
     .row{
