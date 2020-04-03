@@ -183,29 +183,30 @@
         }       
    
         var prevScrollpos = window.pageYOffset;
+        var navLinkClick = false;
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
+            if (prevScrollpos > currentScrollPos && !navLinkClick) {
                 document.getElementById("navbar").style.top = "0";
             } else {
                 document.getElementById("navbar").style.top = "-50px";
             }
             prevScrollpos = currentScrollPos;
-
+            navLinkClick = false;
             scrollFunction()
         }
         
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
-
-            document.getElementById("navbar").style.top = "-50px";
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
         });
 
-        $("a.nav-link").click(function() {            
+        $("a.nav-link").click(function() {   
+            navLinkClick = true;         
             $('.navbar-collapse').collapse('hide');
+            document.getElementById("navbar").style.top = "-50px";
         });
     </script>
 </html>
