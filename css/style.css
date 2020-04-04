@@ -38,6 +38,11 @@ a,div,span{
     color:#4d4d4d;  
 }
 
+.fab{
+    font-size: 2rem;
+    margin:5px;
+}
+
 .row{
     text-align: center;
     width:100%;
