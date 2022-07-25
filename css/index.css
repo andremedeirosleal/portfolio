@@ -1,0 +1,122 @@
+body {
+    background-image: url("/portfolio/lib/images/bg/carbon-fibre.png");
+    background-color: #2F2F2F;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#card-0 {
+    margin-top: 50px;
+}
+
+i {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.fa, .fas, .fab {
+    line-height: unset;
+}
+
+.img-personal {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+a, div, span {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.social {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.card-default {
+    box-shadow: -4px 4px 8px black;
+    margin: 2px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #4d4d4d;
+    margin: 2px;
+    margin-top: 30px;
+    width: 100%;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+
+.outside-card {
+    width: 100%;
+}
+
+.txt-lines {
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.txt-title {
+    font-size: 2.75 rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#bt-up {
+    position: fixed;
+    display: none;
+    bottom: 40px;
+    right: 10px;
+    z-index: 99;
+    font-size: 12px;
+    outline: none;
+    background-color: rgba(47, 47, 47, 0.7);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#bt-up:hover {
+    background-color: #404040;
+}
+
+hr{
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .card-default {
+        border-radius: 4px;
+        margin: 0px;
+        margin-top: 10px;
+        min-width: 100%;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .col {
+        padding-left: 2px;
+        padding-right: 2px;
+        min-width: 100%;
+    }
+}
